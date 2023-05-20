@@ -25,7 +25,7 @@ and processing and transforming the data with Spark (Scala) before writing it to
  `C:\kafka_33\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic nifikafka`
 
 <p align="center">
-  <img src="Images/topic.png" width="350" title="Kafka Topic">
+  <img src="Images/topic.png" width="850" title="Kafka Topic">
 </p> 
 
 ### Open the NiFi UI and configure the following processors in NiFi:
@@ -33,7 +33,7 @@ and processing and transforming the data with Spark (Scala) before writing it to
   *  PublishKafka: Provide the Kafka topic and connection details.    
 
 <p align="center">
-  <img src="Images/nifi.png" width="150" title="Nifi Data Ingestion">
+  <img src="Images/nifi.png" width="250" title="Nifi Data Ingestion">
 </p>     
 
  ExecuteSparkStreaming: Configure Spark (Scala) to subscribe to the Kafka topic and process the JSON data.
@@ -54,11 +54,11 @@ nationality text
 );`
 
 ## Running the Streaming Pipeline
-Start NiFi, Kafka, Spark, and Cassandra services.
-The streaming pipeline will generate JSON data using NiFi, ingest it into Kafka, and process it with Spark (Scala). 
-Finally, the transformed data will be written to the specified Cassandra table.
+
+ * The streaming pipeline will generate JSON data using NiFi, ingest it into Kafka, and process it with Spark (Scala). 
+ * Finally, the transformed data will be written to the specified Cassandra table.
 
 <p align="center">
-  <img src="Images/Cassandra.png" width="250" title="Cassandra Table">
+  <img src="Images/Cassandra.png" width="1050" title="Cassandra Table">
 </p>  
 
